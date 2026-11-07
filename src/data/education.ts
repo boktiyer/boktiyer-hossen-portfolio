@@ -2,11 +2,11 @@ export type Education = {
   degree: string;
   field: string;
   institution: string;
-  shortName: string;
+  shortName?: string;
   status: string;
   location: string;
-  description: string;
-  focus: string[];
+  description?: string;
+  focus?: string[];
 };
 
 export const education: Education[] = [
@@ -20,5 +20,12 @@ export const education: Education[] = [
     description:
       "Studying the foundations of computer science while building real web projects alongside my coursework.",
     focus: ["Programming", "Data Structures", "Algorithms", "Web Technologies"],
+  },
+  {
+    degree: "Higher Secondary Certificate (HSC)",
+    field: "Science Group",
+    institution: "Chattogram Biggan College",
+    status: "Passed · 2025",
+    location: "Chattogram, Bangladesh",
   },
 ];

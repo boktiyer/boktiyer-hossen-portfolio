@@ -29,20 +29,25 @@ export function EducationSection() {
                       <h3 className="font-display mt-3 text-xl font-semibold sm:text-2xl">{edu.degree}</h3>
                       <p className="text-accent mt-1 font-medium">{edu.field}</p>
                       <p className="mt-3 font-medium">
-                        {edu.institution} <span className="text-muted">({edu.shortName})</span>
+                        {edu.institution}{" "}
+                        {edu.shortName && <span className="text-muted">({edu.shortName})</span>}
                       </p>
                       <p className="text-muted mt-1 flex items-center gap-1.5 text-sm">
                         <MapPin className="size-4" aria-hidden />
                         {edu.location}
                       </p>
-                      <p className="text-muted mt-4 leading-relaxed">{edu.description}</p>
-                      <ul className="mt-5 flex flex-wrap gap-2" aria-label="Areas of study">
-                        {edu.focus.map((f) => (
-                          <li key={f} className="bg-card border-accent/15 rounded-full border px-3 py-1 text-xs">
-                            {f}
-                          </li>
-                        ))}
-                      </ul>
+                      {edu.description && (
+                        <p className="text-muted mt-4 leading-relaxed">{edu.description}</p>
+                      )}
+                      {edu.focus && (
+                        <ul className="mt-5 flex flex-wrap gap-2" aria-label="Areas of study">
+                          {edu.focus.map((f) => (
+                            <li key={f} className="bg-card border-accent/15 rounded-full border px-3 py-1 text-xs">
+                              {f}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </article>
