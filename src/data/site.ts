@@ -28,11 +28,10 @@ export const siteConfig = {
   profileImage: "/images/profile.png",
   cvFile: "/resume/cv.pdf",
 
-  // TODO: replace these with your real links and email address
-  email: "your-email@example.com",
+  email: "boktiyerhossen43085@gmail.com",
   socials: {
     github: "https://github.com/boktiyer",
-    linkedin: "https://www.linkedin.com/in/your-username",
+    linkedin: "https://www.linkedin.com/in/boktiyer-hossen-b460a6391",
   },
   // This website's code on GitHub
   repoUrl: "https://github.com/boktiyer/boktiyer-hossen-portfolio",
