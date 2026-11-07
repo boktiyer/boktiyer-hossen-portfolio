@@ -140,7 +140,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.9 }}
-              className="glass absolute top-8 -left-4 flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-medium shadow-xl sm:-left-10"
+              className="glass absolute top-0 -left-8 flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-medium shadow-xl sm:top-8 sm:-left-10"
             >
               <span className="bg-maroon/60 flex size-8 items-center justify-center rounded-lg">
                 <Code2 className="size-4" aria-hidden />
@@ -151,7 +151,7 @@ export function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.1 }}
-              className="glass absolute -right-4 bottom-10 flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-medium shadow-xl sm:-right-8"
+              className="glass absolute -right-8 -bottom-2 flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-medium shadow-xl sm:-right-8 sm:bottom-10"
             >
               <span className="bg-maroon/60 flex size-8 items-center justify-center rounded-lg">
                 <Palette className="size-4" aria-hidden />
