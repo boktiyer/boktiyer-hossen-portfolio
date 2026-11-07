@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MAROON DESIGN SYSTEM
+   Each --color-* below becomes a Tailwind class automatically:
+   --color-maroon  ->  bg-maroon, text-maroon, border-maroon ...
+   ============================================================ */
+@theme {
+  --color-maroon: #800020;
+  --color-maroon-deep: #4a0e20;
+  --color-burgundy: #651c32;
+  --color-accent: #c08091;
+  --color-accent-soft: #e2b8c4;
+  --color-ink: #100b0e;
+  --color-card: #1c1217;
+  --color-muted: #b9a8ae;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Sections stop below the fixed navbar when you click a menu link */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background: var(--color-maroon);
+  color: #fff;
+}
+
+/* Visible keyboard focus everywhere (accessibility) */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-maroon), var(--color-burgundy));
+  border-radius: 999px;
+  border: 2px solid var(--color-ink);
+}
+
+/* ---------- Reusable utility classes ---------- */
+
+/* Frosted-glass card */
+@utility glass {
+  background: rgb(28 18 23 / 0.6);
+  border: 1px solid rgb(192 128 145 / 0.14);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Maroon -> rose gradient text */
+@utility text-gradient {
+  background: linear-gradient(110deg, #ffffff 0%, var(--color-accent-soft) 35%, var(--color-accent) 60%, #a3324f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Subtle dotted grid in the background */
+@utility bg-grid {
+  background-image: radial-gradient(rgb(192 128 145 / 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
