@@ -6,6 +6,7 @@ import { About } from "@/sections/About";
 import { Skills } from "@/sections/Skills";
 import { Services } from "@/sections/Services";
 import { Projects } from "@/sections/Projects";
+import { Designs } from "@/sections/Designs";
 import { EducationSection } from "@/sections/Education";
 import { Contact } from "@/sections/Contact";
 import { siteConfig } from "@/data/site";
@@ -35,6 +36,7 @@ export default function HomePage() {
         <Skills />
         <Services />
         <Projects />
+        <Designs />
         <EducationSection />
         <Contact />
       </main>

@@ -57,6 +57,7 @@ export const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
+  { label: "Designs", href: "#designs" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
