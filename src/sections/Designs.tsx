@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Expand, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand, FileText, X } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { designs, type Design } from "@/data/designs";
@@ -12,6 +12,8 @@ import { cn } from "@/lib/utils";
 type Filter = "All" | Design["category"];
 // Filter buttons are created from the categories that actually have items.
 const filters: Filter[] = ["All", ...new Set(designs.map((d) => d.category))];
+/** "slides" for presentations, "pages" for everything else */
+const unit = (d: Design) => (d.category === "PowerPoint Slides" ? "slides" : "pages");
 
 export function Designs() {
   const [filter, setFilter] = useState<Filter>("All");
@@ -53,7 +55,7 @@ export function Designs() {
           eyebrow="Design Work"
           title="Designs &"
           highlight="documents"
-          description="Posters, social media posts and Microsoft Office documents I have created. Click any item to see it full size."
+          description="Posters, social media posts, Microsoft Word documents and PowerPoint presentations I have created. Click any item to see it full size."
         />
 
         {/* Category filter */}
@@ -99,6 +101,12 @@ export function Designs() {
                   <span className="text-accent-soft text-xs font-semibold tracking-wider uppercase">{d.category}</span>
                   <span className="font-display mt-1 text-lg font-semibold">{d.title}</span>
                 </div>
+                {d.file && (
+                  <span className="bg-ink/85 border-accent/40 text-accent-soft absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur">
+                    <FileText className="size-3.5" aria-hidden />
+                    PDF{d.pages ? ` · ${d.pages} ${unit(d)}` : ""}
+                  </span>
+                )}
                 <span className="bg-ink/70 border-accent/30 absolute top-3 right-3 flex size-9 items-center justify-center rounded-full border opacity-0 backdrop-blur transition group-hover:opacity-100" aria-hidden>
                   <Expand className="size-4" />
                 </span>
@@ -171,6 +179,17 @@ export function Designs() {
                 <p className="text-accent text-xs font-semibold tracking-wider uppercase">{current.category}</p>
                 <h3 className="font-display mt-1 text-lg font-semibold">{current.title}</h3>
                 <p className="text-muted mt-1 text-sm">{current.description}</p>
+                {current.file && (
+                  <a
+                    href={current.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="from-maroon to-burgundy mt-4 inline-flex items-center gap-2 rounded-full bg-linear-to-r px-5 py-2.5 text-sm font-semibold shadow-[0_10px_28px_-10px_rgb(128_0_32/1)] transition hover:-translate-y-0.5"
+                  >
+                    <FileText className="size-4" aria-hidden />
+                    View full PDF{current.pages ? ` (${current.pages} ${unit(current)})` : ""}
+                  </a>
+                )}
               </div>
             </motion.div>
           </motion.div>

@@ -15,6 +15,10 @@ export type Design = {
   image: string;
   width: number;
   height: number;
+  /** Optional full document (PDF) visitors can open */
+  file?: string;
+  /** Number of pages in the full document */
+  pages?: number;
 };
 
 export const designs: Design[] = [
@@ -61,13 +65,15 @@ export const designs: Design[] = [
     height: 1200,
   },
 
-  // ----- Microsoft Word documents (first page shown) -----
+  // ----- Microsoft Word documents (first page shown, full PDF linked) -----
   {
     title: "Higher Math Concept Book — Chapter 07",
     category: "Word Document",
     description:
       "5-page Bangla concept book on infinite series for Udayan Academic Care (Class 9-10) — headings, tables, math equations and worked examples formatted in Microsoft Word.",
     image: "/images/designs/higher-math-ch07-concept-book.webp",
+    file: "/documents/higher-math-ch07-concept-book.pdf",
+    pages: 5,
     width: 1100,
     height: 1556,
   },
@@ -77,6 +83,8 @@ export const designs: Design[] = [
     description:
       "3-page Bangla chemistry concept book for Udayan Academic Care (Class 9-10) — comparison tables, formulas and practice questions formatted in Microsoft Word.",
     image: "/images/designs/chemistry-ch03-concept-book.webp",
+    file: "/documents/chemistry-ch03-concept-book.pdf",
+    pages: 3,
     width: 1100,
     height: 1556,
   },
@@ -86,7 +94,22 @@ export const designs: Design[] = [
     description:
       "4-page, 100-question Parts of Speech test with answers and explanations for Shamim's English — two-column exam layout with a branded header, formatted in Microsoft Word.",
     image: "/images/designs/parts-of-speech-mcq-sheet.webp",
+    file: "/documents/parts-of-speech-mcq-sheet.pdf",
+    pages: 4,
     width: 1100,
     height: 1555,
+  },
+
+  // ----- Microsoft PowerPoint presentations (first slide shown, full PDF linked) -----
+  {
+    title: "DU-B (24-25) English Question Solve",
+    category: "PowerPoint Slides",
+    description:
+      "19-slide PowerPoint presentation solving the Dhaka University B-unit 2024-25 English questions for Shamim's English — answer callouts plus Bangla-English vocabulary and idiom tables.",
+    image: "/images/designs/du-b-24-25-english-question-solve.webp",
+    file: "/documents/du-b-24-25-english-question-solve.pdf",
+    pages: 19,
+    width: 1280,
+    height: 720,
   },
 ];
