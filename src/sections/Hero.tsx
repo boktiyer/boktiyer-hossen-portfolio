@@ -35,8 +35,8 @@ export function Hero() {
     >
       {/* Background decoration */}
       <div className="bg-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" aria-hidden />
-      <div className="bg-maroon/30 absolute -top-40 -left-40 size-[32rem] rounded-full blur-[120px]" aria-hidden />
-      <div className="bg-burgundy/30 absolute -right-32 bottom-0 size-[28rem] rounded-full blur-[120px]" aria-hidden />
+      <div className="bg-maroon/30 absolute -top-40 -left-40 size-128 rounded-full blur-[120px]" aria-hidden />
+      <div className="bg-burgundy/30 absolute -right-32 bottom-0 size-112 rounded-full blur-[120px]" aria-hidden />
 
       <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-5 sm:px-8 lg:grid-cols-[1.15fr_1fr]">
         {/* LEFT: text */}
@@ -94,7 +94,7 @@ export function Hero() {
           <motion.div variants={item} className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href="#projects"
-              className="group from-maroon to-burgundy inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r px-7 py-3.5 font-semibold shadow-[0_12px_32px_-10px_rgb(128_0_32/1)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_40px_-8px_rgb(128_0_32/1)] sm:w-auto"
+              className="group from-maroon to-burgundy inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r px-7 py-3.5 font-semibold shadow-[0_12px_32px_-10px_rgb(128_0_32/1)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_40px_-8px_rgb(128_0_32/1)] sm:w-auto"
             >
               View My Projects
               <ArrowRight className="size-4 transition group-hover:translate-x-1" aria-hidden />
@@ -131,7 +131,7 @@ export function Hero() {
             />
             <div className="bg-ink absolute -inset-1 rounded-full" aria-hidden />
 
-            <div className="border-accent/30 bg-card relative size-64 overflow-hidden rounded-full border-2 sm:size-80 lg:size-[22rem] xl:size-[26rem]">
+            <div className="border-accent/30 bg-card relative size-64 overflow-hidden rounded-full border-2 sm:size-80 lg:size-88 xl:size-104">
               <ProfileImage />
             </div>
 

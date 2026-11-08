@@ -38,9 +38,9 @@ export const skillCategories: SkillCategory[] = [
     description: "Creating polished, professional documents and presentations.",
     icon: FileText,
     skills: [
-      "Microsoft Word",
+      "Microsoft Word (DOCX)",
       "Professional Document Formatting",
-      "Microsoft PowerPoint",
+      "Microsoft PowerPoint (PPTX)",
       "Professional Presentation Creation",
     ],
   },

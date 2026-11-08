@@ -40,15 +40,15 @@ export const services: Service[] = [
     icon: ImageIcon,
   },
   {
-    title: "Presentation Design",
+    title: "PowerPoint Presentations",
     description:
-      "Professional PowerPoint and Canva presentations with clean structure and visuals.",
+      "Professional Microsoft PowerPoint (PPTX) and Canva presentations with clean structure, visuals and smooth slide flow.",
     icon: Presentation,
   },
   {
-    title: "Document Formatting",
+    title: "Microsoft Word Documents",
     description:
-      "Well-structured Microsoft Word documents — reports, assignments, CVs and more.",
+      "Well-structured, professionally formatted Word (DOCX) documents — reports, assignments, CVs and more.",
     icon: FileText,
   },
 ];

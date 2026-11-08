@@ -16,7 +16,7 @@ export function ProfileImage() {
       <div
         role="img"
         aria-label={`${siteConfig.name} initials`}
-        className="from-maroon to-maroon-deep font-display flex size-full items-center justify-center bg-gradient-to-br text-7xl font-bold"
+        className="from-maroon to-maroon-deep font-display flex size-full items-center justify-center bg-linear-to-br text-7xl font-bold"
       >
         {siteConfig.initials}
       </div>

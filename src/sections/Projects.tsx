@@ -9,7 +9,7 @@ import { siteConfig } from "@/data/site";
 export function Projects() {
   return (
     <section id="projects" className="relative overflow-hidden py-24 sm:py-32">
-      <div className="bg-burgundy/15 absolute right-0 bottom-0 size-[30rem] rounded-full blur-[140px]" aria-hidden />
+      <div className="bg-burgundy/15 absolute right-0 bottom-0 size-120 rounded-full blur-[140px]" aria-hidden />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Featured Projects"
@@ -25,7 +25,7 @@ export function Projects() {
               <Reveal key={project.title} delay={i * 0.1} className="h-full">
                 <article className="glass group hover:border-accent/40 flex h-full flex-col overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_-20px_rgb(128_0_32/0.8)]">
                   {/* Preview */}
-                  <div className="from-maroon-deep via-burgundy to-maroon relative aspect-video overflow-hidden bg-gradient-to-br">
+                  <div className="from-maroon-deep via-burgundy to-maroon relative aspect-video overflow-hidden bg-linear-to-br">
                     {project.image ? (
                       <Image
                         src={project.image}

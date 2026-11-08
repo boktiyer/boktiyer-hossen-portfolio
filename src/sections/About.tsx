@@ -65,7 +65,7 @@ export function About() {
               <ul className="glass divide-accent/10 divide-y rounded-3xl px-6">
                 {facts.map(({ icon: Icon, label, value }) => (
                   <li key={label} className="flex items-center gap-4 py-5">
-                    <span className="from-maroon to-maroon-deep flex size-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br">
+                    <span className="from-maroon to-maroon-deep flex size-11 shrink-0 items-center justify-center rounded-xl bg-linear-to-br">
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <div className="min-w-0">

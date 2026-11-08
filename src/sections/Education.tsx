@@ -13,12 +13,12 @@ export function EducationSection() {
           {education.map((edu) => (
             <li key={edu.institution} className="relative">
               {/* Timeline dot */}
-              <span className="from-maroon to-burgundy border-ink absolute top-8 -left-[calc(2rem+13px)] flex size-6 items-center justify-center rounded-full border-4 bg-gradient-to-br shadow-[0_0_0_4px_rgb(192_128_145/0.25)] sm:-left-[calc(3rem+13px)]" aria-hidden />
+              <span className="from-maroon to-burgundy border-ink absolute top-8 -left-[calc(2rem+13px)] flex size-6 items-center justify-center rounded-full border-4 bg-linear-to-br shadow-[0_0_0_4px_rgb(192_128_145/0.25)] sm:-left-[calc(3rem+13px)]" aria-hidden />
 
               <Reveal from="right">
                 <article className="glass hover:border-accent/40 rounded-3xl p-7 transition duration-300 sm:p-9">
                   <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-                    <span className="from-maroon to-maroon-deep border-accent/30 flex size-14 shrink-0 items-center justify-center rounded-2xl border bg-gradient-to-br">
+                    <span className="from-maroon to-maroon-deep border-accent/30 flex size-14 shrink-0 items-center justify-center rounded-2xl border bg-linear-to-br">
                       <GraduationCap className="size-7" aria-hidden />
                     </span>
                     <div>

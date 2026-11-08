@@ -114,7 +114,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="relative overflow-hidden py-24 sm:py-32">
-      <div className="bg-maroon/20 absolute bottom-0 left-1/2 size-[36rem] -translate-x-1/2 rounded-full blur-[150px]" aria-hidden />
+      <div className="bg-maroon/20 absolute bottom-0 left-1/2 size-144 -translate-x-1/2 rounded-full blur-[150px]" aria-hidden />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Contact Me"
@@ -135,7 +135,7 @@ export function Contact() {
               <ul className="mt-8 space-y-5">
                 <li>
                   <a href={`mailto:${siteConfig.email}`} className="group flex items-center gap-4">
-                    <span className="from-maroon to-maroon-deep flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br transition group-hover:scale-105">
+                    <span className="from-maroon to-maroon-deep flex size-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br transition group-hover:scale-105">
                       <Mail className="size-5" aria-hidden />
                     </span>
                     <span className="min-w-0">
@@ -147,7 +147,7 @@ export function Contact() {
                   </a>
                 </li>
                 <li className="flex items-center gap-4">
-                  <span className="from-maroon to-maroon-deep flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br">
+                  <span className="from-maroon to-maroon-deep flex size-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br">
                     <MapPin className="size-5" aria-hidden />
                   </span>
                   <span>
@@ -259,7 +259,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={status.state === "sending"}
-                className="from-maroon to-burgundy mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r px-8 py-3.5 font-semibold shadow-[0_12px_32px_-10px_rgb(128_0_32/1)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+                className="from-maroon to-burgundy mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r px-8 py-3.5 font-semibold shadow-[0_12px_32px_-10px_rgb(128_0_32/1)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
               >
                 {status.state === "sending" ? (
                   <>

@@ -18,7 +18,7 @@ export function Services() {
             <Reveal key={title} delay={(i % 3) * 0.1} className="h-full">
               <article className="group bg-card/70 border-accent/10 hover:border-accent/40 relative h-full overflow-hidden rounded-3xl border p-8 transition duration-300 hover:-translate-y-1.5">
                 {/* Top gradient line that grows on hover */}
-                <span className="from-maroon via-accent to-maroon absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-gradient-to-r transition duration-500 group-hover:scale-x-100" aria-hidden />
+                <span className="from-maroon via-accent to-maroon absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-linear-to-r transition duration-500 group-hover:scale-x-100" aria-hidden />
                 <span className="text-accent/10 font-display absolute top-4 right-6 text-6xl font-bold select-none" aria-hidden>
                   {String(i + 1).padStart(2, "0")}
                 </span>

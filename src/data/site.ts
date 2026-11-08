@@ -14,7 +14,7 @@ export const siteConfig = {
   description:
     "Portfolio of Boktiyer Hossen — a Frontend Web Developer, Canva Designer and Microsoft Office Specialist studying Computer Science & Engineering at Port City International University.",
   intro:
-    "I build clean, responsive and fast websites with React, Next.js and Tailwind CSS — and I design eye-catching posters, social media graphics and professional presentations.",
+    "I build clean, responsive and fast websites with React, Next.js and Tailwind CSS — and I design eye-catching posters, social media graphics, Microsoft Word documents and PowerPoint presentations.",
   location: "Chattogram, Bangladesh",
 
   // The live address of your website (set NEXT_PUBLIC_SITE_URL on Vercel).
@@ -44,6 +44,8 @@ export const siteConfig = {
     "React Developer",
     "Canva Designer",
     "Microsoft Office Specialist",
+    "Microsoft Word",
+    "Microsoft PowerPoint",
     "PCIU",
     "Portfolio",
   ],
