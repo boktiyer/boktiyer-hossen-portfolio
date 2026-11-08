@@ -21,7 +21,8 @@ export default function HomePage() {
     jobTitle: siteConfig.shortRole,
     url: siteConfig.url,
     image: `${siteConfig.url}${siteConfig.profileImage}`,
-    sameAs: [siteConfig.socials.github, siteConfig.socials.linkedin],
+    email: `mailto:${siteConfig.email}`,
+    sameAs: [siteConfig.socials.github, siteConfig.socials.linkedin, siteConfig.socials.facebook],
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Port City International University",

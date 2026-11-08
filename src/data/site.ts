@@ -32,6 +32,7 @@ export const siteConfig = {
   socials: {
     github: "https://github.com/boktiyer",
     linkedin: "https://www.linkedin.com/in/boktiyer-hossen-b460a6391",
+    facebook: "https://www.facebook.com/boktiyer.hossen.2025",
   },
   // This website's code on GitHub
   repoUrl: "https://github.com/boktiyer/boktiyer-hossen-portfolio",
@@ -62,6 +63,9 @@ export const siteConfig = {
     "Portfolio",
   ],
 };
+
+/** Opens a new Gmail message addressed to you (works even without a desktop mail app). */
+export const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(siteConfig.email)}`;
 
 export const navLinks = [
   { label: "Home", href: "#home" },

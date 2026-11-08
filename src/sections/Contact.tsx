@@ -6,7 +6,7 @@ import { Mail, MapPin, Send, LoaderCircle, CircleCheck, CircleAlert } from "luci
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { SocialLinks } from "@/components/SocialLinks";
-import { siteConfig } from "@/data/site";
+import { siteConfig, gmailComposeUrl } from "@/data/site";
 import {
   validateContact,
   hasErrors,
@@ -134,13 +134,13 @@ export function Contact() {
               </p>
               <ul className="mt-8 space-y-5">
                 <li>
-                  <a href={`mailto:${siteConfig.email}`} className="group flex items-center gap-4">
+                  <a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4">
                     <span className="from-maroon to-maroon-deep flex size-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br transition group-hover:scale-105">
                       <Mail className="size-5" aria-hidden />
                     </span>
                     <span className="min-w-0">
                       <span className="text-muted block text-xs tracking-wider uppercase">Email</span>
-                      <span className="group-hover:text-accent block truncate font-medium transition">
+                      <span className="group-hover:text-accent block font-medium break-all transition">
                         {siteConfig.email}
                       </span>
                     </span>
@@ -158,7 +158,7 @@ export function Contact() {
               </ul>
               <div className="mt-auto pt-10">
                 <p className="text-muted mb-4 text-sm">Find me on</p>
-                <SocialLinks showEmail />
+                <SocialLinks />
               </div>
             </div>
           </Reveal>

@@ -70,7 +70,7 @@ export function About() {
                     </span>
                     <div className="min-w-0">
                       <p className="text-muted text-xs tracking-wider uppercase">{label}</p>
-                      <p className="truncate font-medium">{value}</p>
+                      <p className="font-medium break-all">{value}</p>
                     </div>
                   </li>
                 ))}
