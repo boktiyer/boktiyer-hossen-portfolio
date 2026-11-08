@@ -89,6 +89,17 @@ export const designs: Design[] = [
     height: 1556,
   },
   {
+    title: "Biology Concept Book — Chapter 02",
+    category: "Word Document",
+    description:
+      "6-page Bangla biology concept book on cells and tissues for Udayan Academic Care (Class 9-10) — flowcharts, labelled diagrams and comparison tables formatted in Microsoft Word.",
+    image: "/images/designs/biology-ch02-concept-book.webp",
+    file: "/documents/biology-ch02-concept-book.pdf",
+    pages: 6,
+    width: 1100,
+    height: 1556,
+  },
+  {
     title: "English MCQ Answer Sheet",
     category: "Word Document",
     description:
