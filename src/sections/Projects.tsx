@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink, FolderGit2, Plus } from "lucide-react";
+import { ExternalLink, FolderGit2, Plus, Users } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { GithubIcon } from "@/components/BrandIcons";
@@ -41,11 +41,17 @@ export function Projects() {
                         </span>
                       </div>
                     )}
+                    {project.badge && (
+                      <span className="bg-ink/80 border-accent/40 text-accent-soft absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur-md">
+                        <Users className="size-3.5" aria-hidden />
+                        {project.badge}
+                      </span>
+                    )}
                   </div>
 
                   <div className="flex flex-1 flex-col p-7">
-                    <h3 className="font-display flex items-center gap-2 text-xl font-semibold">
-                      <FolderGit2 className="text-accent size-5 shrink-0" aria-hidden />
+                    <h3 className="font-display flex items-start gap-2 text-xl font-semibold">
+                      <FolderGit2 className="text-accent mt-1 size-5 shrink-0" aria-hidden />
                       {project.title}
                     </h3>
                     <p className="text-muted mt-3 flex-1 text-sm leading-relaxed">{project.description}</p>

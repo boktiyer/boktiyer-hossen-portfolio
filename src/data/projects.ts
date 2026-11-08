@@ -17,9 +17,20 @@ export type Project = {
   liveUrl?: string;
   codeUrl?: string;
   image?: string;
+  /** Small label shown on the screenshot, e.g. "Team Project" */
+  badge?: string;
 };
 
 export const projects: Project[] = [
+  {
+    title: "Heritage Modern — Restaurant Website",
+    description:
+      "A multi-page website for a Bangladeshi restaurant with Home, Menu, About, Contact and Book a Table pages, a dish cart with checkout, a signature dishes slider and guest reviews.",
+    tags: ["React", "React Router", "Tailwind CSS", "Swiper", "Vite"],
+    liveUrl: "https://heritage-modern-seven.vercel.app/",
+    image: "/images/projects/heritage-modern.webp",
+    badge: "Team Project · Creative IT Institute",
+  },
   {
     title: "Personal Portfolio Website",
     description:
