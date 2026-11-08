@@ -17,6 +17,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: siteConfig.name,
+    alternateName: siteConfig.alternateNames,
     jobTitle: siteConfig.shortRole,
     url: siteConfig.url,
     image: `${siteConfig.url}${siteConfig.profileImage}`,

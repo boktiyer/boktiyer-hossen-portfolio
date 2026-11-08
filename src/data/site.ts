@@ -36,8 +36,20 @@ export const siteConfig = {
   // This website's code on GitHub
   repoUrl: "https://github.com/boktiyer/boktiyer-hossen-portfolio",
 
+  // Other spellings people may search for (used in SEO structured data)
+  alternateNames: ["Boktiyer", "Boktier Hossen", "Boktiar Hossen", "Boktier"],
+
   keywords: [
     "Boktiyer Hossen",
+    "Boktiyer",
+    "boktier hossen",
+    "Boktiar Hossen",
+    "Boktier",
+    "Boktiyer Hossen portfolio",
+    "Boktiyer Hossen protfolio",
+    "portfolio website",
+    "protfolio",
+    "protfolio website",
     "Frontend Developer",
     "Web Developer Bangladesh",
     "Next.js Developer",
