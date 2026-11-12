@@ -23,6 +23,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Shamim's English — Coaching Website",
+    description:
+      "A website for Shamim Sir's English coaching for HSC 1st Year, HSC 2nd Year and university admission students. It has course and book listings, a teacher profile, student login and registration, and a bilingual (English and Bangla) design.",
+    tags: ["Responsive Design", "Bilingual UI", "Auth Pages", "Vercel"],
+    liveUrl: "https://shamims-english.vercel.app/",
+    image: "/images/projects/shamims-english.png",
+  },
+  {
     title: "Heritage Modern — Restaurant Website",
     description:
       "A multi-page website for a Bangladeshi restaurant with Home, Menu, About, Contact and Book a Table pages, a dish cart with checkout, a signature dishes slider and guest reviews.",
