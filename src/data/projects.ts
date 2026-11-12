@@ -23,6 +23,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Weather App — Live Forecast Dashboard",
+    description:
+      "A fast, modern weather dashboard with live conditions, hourly and 7-day forecasts, UV index, wind, sunrise and sunset for any city. It has city search, current-location lookup, °C/°F switching, light and dark themes, and a bilingual (English and Bangla) interface.",
+    tags: ["React", "Tailwind CSS", "Open-Meteo API", "Bilingual UI", "Vercel"],
+    liveUrl: "https://boktiyer-weather.vercel.app/",
+    image: "/images/projects/weather-app.png",
+  },
+  {
     title: "Shamim's English — Coaching Website",
     description:
       "A website for Shamim Sir's English coaching for HSC 1st Year, HSC 2nd Year and university admission students. It has course and book listings, a teacher profile, student login and registration, and a bilingual (English and Bangla) design.",
