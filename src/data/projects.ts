@@ -23,6 +23,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Alpa Zone BD — E-commerce Website",
+    description:
+      "An online fashion store for men's, women's and baby clothing and accessories. It has product search, category pages, a wishlist and cart, order tracking, cash on delivery, an admin panel, and a bilingual (English and Bangla) interface.",
+    tags: ["E-commerce", "Admin Panel", "Responsive Design", "Bilingual UI", "Vercel"],
+    liveUrl: "https://alpa-zone-bd.vercel.app/",
+    image: "/images/projects/alpa-zone-bd.png",
+  },
+  {
     title: "Weather App — Live Forecast Dashboard",
     description:
       "A fast, modern weather dashboard with live conditions, hourly and 7-day forecasts, UV index, wind, sunrise and sunset for any city. It has city search, current-location lookup, °C/°F switching, light and dark themes, and a bilingual (English and Bangla) interface.",
